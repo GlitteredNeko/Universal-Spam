@@ -2,8 +2,8 @@ function BotMessage(Message)
 while wait() do
 if _G.Enabled == true then
 game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(tostring(Message), "All")
-end
 else
 _G.Enabled = false
+end
 end
 end
